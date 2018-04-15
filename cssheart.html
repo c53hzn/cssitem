@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>easy-to-adjust css heart</title>
+<style>
+/* css heart start */
+  .heartOuter{
+  position: relative;
+  margin: 0px auto;
+  /* change size start */
+  width: 200px;
+  height: 200px;
+  /* change size end */
+}
+.heartInner{
+  position: absolute;
+  top: 4%;
+  left: 12.5%;
+  width: 75%;
+  height: 75%;
+  transform: rotate(-45deg);
+}
+.heartSquare, .heartHalfCircle1, .heartHalfCircle2{
+  position: absolute;
+  background: red;
+}
+.heartSquare{
+  top: 25%;
+  left: 0px;
+  width: 75%;
+  height: 75%;
+}
+.heartHalfCircle1, .heartHalfCircle2{
+  width: 75%;
+  height: 75%;
+}
+.heartHalfCircle1{
+  top: -15%;
+  left: 0px;
+  border-radius: 100% 100% 0 0;
+  background: red;
+}
+.heartHalfCircle2{
+  top: 25%;
+  left: 40%;
+  border-radius: 0 100% 100% 0;
+}
+/* css heart end */
+</style>
+
+</head>
+
+<body translate="no" >
+  <div class="heartOuter">
+    <div class="heartInner">
+      <div class="heartSquare">
+      </div>
+      <div class="heartHalfCircle1">
+      </div>
+      <div class="heartHalfCircle2">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+ 
