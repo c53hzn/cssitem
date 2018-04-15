@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <title>percentage responsive CSS eight-tooth gear</title>
   <style>
+body{
+  margin: 0px auto;
+  width: 800px;
+  max-width: 100%;
+}
+.container{
+  max-width: 100%;
+  padding: 10px;
+}
+pre{
+  padding: 10px;
+  background: rgba(128, 128, 128, 0.2);
+}
 /*eight-tooth gear CSS start*/
 .gearOuter{
   position: relative;
@@ -25,7 +38,7 @@
   /*border-width must be 1/6 of outer box
     border-width cannot be percentage
   /*change border width end*/
-  border-radius: 50%;
+  border-radius: 100%;
 }
 .tooth1, .tooth2, .tooth3, .tooth4, .tooth5, .tooth6, .tooth7, .tooth8{
   position: absolute;
@@ -89,25 +102,117 @@
 </head>
 
 <body translate="no" >
-
+  <div class="container">
+<p>8-tooth CSS gear</p>
 <div class="gearOuter">
   <div class="gearCircle"></div>
-  <div class="tooth1">
-  </div>
-  <div class="tooth2">
-  </div>
-  <div class="tooth3">
-  </div>
-  <div class="tooth4">
-  </div>
-  <div class="tooth5">
-  </div>
-  <div class="tooth6">
-  </div>
-  <div class="tooth7">
-  </div>
-  <div class="tooth8">
-  </div>
+  <div class="tooth1"></div>
+  <div class="tooth2"></div>
+  <div class="tooth3"></div>
+  <div class="tooth4"></div>
+  <div class="tooth5"></div>
+  <div class="tooth6"></div>
+  <div class="tooth7"></div>
+  <div class="tooth8"></div>
+</div>
+<p>HTML part</p>
+<code><pre>
+  &lt;div class="gearOuter"&gt;
+    &lt;div class="gearCircle"&gt;&lt;/div&gt;
+    &lt;div class="tooth1"&gt;&lt;/div&gt;
+    &lt;div class="tooth2"&gt;&lt;/div&gt;
+    &lt;div class="tooth3"&gt;&lt;/div&gt;
+    &lt;div class="tooth4"&gt;&lt;/div&gt;
+    &lt;div class="tooth5"&gt;&lt;/div&gt;
+    &lt;div class="tooth6"&gt;&lt;/div&gt;
+    &lt;div class="tooth7"&gt;&lt;/div&gt;
+    &lt;div class="tooth8"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+</pre></code>
+<p>CSS part</p>
+<pre>
+  /*eight-tooth gear CSS start*/
+  .gearOuter{
+    position: relative;
+    <span style="color: red;">/*change size start*/</span>
+    width: 300px;
+    height: 300px;
+    <span style="color: red;">/*change size end*/</span>
+    margin: 0px auto;
+    mix-blend-mode: overlay;
+  }
+  .gearCircle{
+    position: absolute;
+    top: 16.67%;
+    left: 16.67%;
+    height: 33.33%;
+    width: 33.33%;
+    <span style="color: red;">/*change border width start*/</span>
+    border: 50px solid gray;
+    <span style="color: red;">/*border-width must be 1/6 of outer box</span>
+      <span style="color: red;">border-width cannot be percentage</span>
+    <span style="color: red;">/*change border width end*/</span>
+    border-radius: 100%;
+  }
+  .tooth1, .tooth2, .tooth3, .tooth4, .tooth5, .tooth6, .tooth7, .tooth8{
+    position: absolute;
+    background: gray;
+    border-radius: 20%;
+  }
+  .tooth1{
+    top: 8.5%;
+    left: 41.667%;
+    width: 16.67%;
+    height: 16.67%;
+  }
+  .tooth2{
+    top: 41.667%;
+    left: 8.5%;
+    width: 16.67%;
+    height: 16.67%;
+  }
+  .tooth3{
+    transform:rotate(45deg);
+    top: 18%;
+    left: 18%;
+    width: 16.67%;
+    height: 16.67%;
+  }
+  .tooth4{
+    transform:rotate(-45deg);
+    top: 18%;
+    right: 18%;
+    width: 16.67%;
+    height: 16.67%;
+  }
+  .tooth5{
+    bottom: 8.5%;
+    right: 41.667%;
+    width: 16.67%;
+    height: 16.67%;
+  }
+  .tooth6{
+    top: 41.667%;
+    right: 8.5%;
+    width: 16.67%;
+    height: 16.67%;
+  }
+  .tooth7{
+    transform:rotate(45deg);
+    bottom: 18%;
+    left: 18%;
+    width: 16.67%;
+    height: 16.67%;
+  }
+  .tooth8{
+    transform:rotate(-45deg);
+    bottom: 18%;
+    right: 18%;
+    width: 16.67%;
+    height: 16.67%;
+  }
+  /*eight-tooth gear CSS end*/
+</pre>
 </div>
 </body>
 </html>
