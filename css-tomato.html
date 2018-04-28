@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>easy-to-adjust css heart</title>
+<style>
+body{
+  margin: 0px auto;
+  width: 800px;
+  max-width: 100%;
+}
+.container{
+  max-width: 100%;
+  padding: 10px;
+}
+pre{
+  padding: 10px;
+  background: rgba(128, 128, 128, 0.2);
+  overflow-x: scroll;
+}
+.tomato-container{
+  margin: 20px auto;
+  /* change size start */
+  width: 200px;
+  height: 200px;
+  /* change size end */
+}
+.tomato-circle{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: darkgreen;
+  transform: rotate(-30deg);
+  overflow: hidden;
+}
+.tomato-circle-inner{
+  position: absolute;
+  top: 17%;
+  left: 13%;
+  margin: 0px auto;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-13deg);
+}
+.tomato-mask1, .tomato-mask2, .tomato-mask3, .tomato-mask4, .tomato-mask5{
+  position: absolute;
+  background: red;
+}
+.tomato-mask1{
+  top: 25%;
+  left: -10%;
+  width: 60%;
+  height: 100%;
+  transform: skewy(20deg) rotate(0deg);
+}
+.tomato-mask2{
+  top: -74%;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  transform: skewy(-10deg) rotate(0deg);
+}
+.tomato-mask3{
+  top: 58%;
+  left: 30%;
+  width: 100%;
+  height: 100%;
+  transform: skewy(-20deg) rotate(36deg);
+}
+.tomato-mask4{
+  top: -50%;
+  left: 40%;
+  width: 50%;
+  height: 50%;
+  transform: skewy(45deg) rotate(40deg);
+}
+.tomato-mask5{
+  top: -13%;
+  right: -29%;
+  width: 50%;
+  height: 50%;
+  transform: skewx(10deg) skewy(-48deg) rotate(-15deg);
+}
+</style>
+
+</head>
+
+<body translate="no" >
+  <div class="container">
+  <div class="tomato-container">
+    <div class="tomato-circle">
+      <div class="tomato-circle-inner">
+        <div class="tomato-mask1"></div>
+        <div class="tomato-mask2"></div>
+        <div class="tomato-mask3"></div>
+        <div class="tomato-mask4"></div>
+        <div class="tomato-mask5"></div>
+      </div>
+    </div>
+  </div>
+<p>HTML part</p>
+<code><pre>
+  &lt;div class="tomato-container"&gt;
+    &lt;div class="tomato-circle"&gt;
+      &lt;div class="tomato-circle-inner"&gt;
+        &lt;div class="tomato-mask1"&gt;&lt;/div&gt;
+        &lt;div class="tomato-mask2"&gt;&lt;/div&gt;
+        &lt;div class="tomato-mask3"&gt;&lt;/div&gt;
+        &lt;div class="tomato-mask4"&gt;&lt;/div&gt;
+        &lt;div class="tomato-mask5"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre></code>
+<p>CSS part</p>
+<pre>
+  /* css tomato start */
+  .tomato-container{
+    margin: 20px auto;
+    <span style="color: red;">/* change size start */</span>
+    width: 200px;
+    height: 200px;
+    <span style="color: red;">/* change size end */</span>
+  }
+  .tomato-circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: darkgreen;
+    transform: rotate(-30deg);
+    overflow: hidden;
+  }
+  .tomato-circle-inner{
+    position: absolute;
+    top: 17%;
+    left: 13%;
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-13deg);
+  }
+  .tomato-mask1, .tomato-mask2, .tomato-mask3, .tomato-mask4, .tomato-mask5{
+    position: absolute;
+    background: red;
+  }
+  .tomato-mask1{
+    top: 25%;
+    left: -10%;
+    width: 60%;
+    height: 100%;
+    transform: skewy(20deg) rotate(0deg);
+  }
+  .tomato-mask2{
+    top: -74%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    transform: skewy(-10deg) rotate(0deg);
+  }
+  .tomato-mask3{
+    top: 58%;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    transform: skewy(-20deg) rotate(36deg);
+  }
+  .tomato-mask4{
+    top: -50%;
+    left: 40%;
+    width: 50%;
+    height: 50%;
+    transform: skewy(45deg) rotate(40deg);
+  }
+  .tomato-mask5{
+    top: -13%;
+    right: -29%;
+    width: 50%;
+    height: 50%;
+    transform: skewx(10deg) skewy(-48deg) rotate(-15deg);
+  }
+  /* css tomato end */
+</pre>
+</div>
+</body>
+</html>
+ 
