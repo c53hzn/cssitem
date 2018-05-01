@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>easy-to-adjust css solid pentagram</title>
+<style>
+body{
+  margin: 0px auto;
+  width: 800px;
+  max-width: 100%;
+}
+.container{
+  max-width: 100%;
+  padding: 10px;
+}
+pre{
+  padding: 10px;
+  background: rgba(128, 128, 128, 0.2);
+  overflow-x: scroll;
+}
+.solid-pentagram-container{
+  /* change size start */
+  width: 200px;
+  height: 200px;
+  /* change size end */
+  border-radius: 100%;
+  border: red solid 5px; 
+}
+.solid-pentagram-outer{
+  position: relative;
+  left: 10%;
+  width: 77%;
+  height: 77%;
+}
+.solid-pentagram-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.solid-triangle-outer-1, .solid-triangle-outer-2, .solid-triangle-outer-3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.solid-triangle-outer-1{
+  top: -2.5%;
+  left: -25%;
+  transform: rotate(-36deg);
+}
+.solid-triangle-outer-2{
+  top: -16%;
+  left: 10%;
+  transform: rotate(36deg);
+}
+.solid-triangle-outer-3{
+  top: 13%;
+  right: -34.5%;
+  transform: rotate(108deg);
+}
+.solid-triangle-inner{
+  position: absolute;
+  top: 122.5%;
+  right: 0%;
+  width: 200%;
+  height: 100%;
+  background-color: red;
+  transform: rotate(108deg) skewx(54deg);
+}
+</style>
+
+</head>
+
+<body translate="no" >
+  <div class="container">
+  <div class="solid-pentagram-container">
+    <div class="solid-pentagram-outer">
+      <div class="solid-pentagram-inner">
+        <div class="solid-triangle-outer-1">
+          <div class="solid-triangle-inner"></div>
+        </div>
+        <div class="solid-triangle-outer-2">
+          <div class="solid-triangle-inner"></div>
+        </div>
+        <div class="solid-triangle-outer-3">
+          <div class="solid-triangle-inner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<p>HTML part</p>
+<code><pre>
+  &lt;div class="solid-pentagram-container"&gt;
+    &lt;div class="solid-pentagram-outer"&gt;
+      &lt;div class="solid-pentagram-inner"&gt;
+        &lt;div class="solid-triangle-outer-1"&gt;
+          &lt;div class="solid-triangle-inner"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="solid-triangle-outer-2"&gt;
+          &lt;div class="solid-triangle-inner"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="solid-triangle-outer-3"&gt;
+          &lt;div class="solid-triangle-inner"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre></code>
+<p>CSS part</p>
+<pre>
+.solid-pentagram-container{
+  <span style="color: red;">/* change size start */</span>
+  width: 300px;
+  height: 300px;
+  <span style="color: red;">/* change size end */</span>
+  border-radius: 100%;
+  border: red solid 5px; 
+}
+.solid-pentagram-outer{
+  position: relative;
+  left: 10%;
+  width: 77%;
+  height: 77%;
+}
+.solid-pentagram-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.solid-triangle-outer-1, .solid-triangle-outer-2, .solid-triangle-outer-3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.solid-triangle-outer-1{
+  top: -2.5%;
+  left: -25%;
+  transform: rotate(-36deg);
+}
+.solid-triangle-outer-2{
+  top: -16%;
+  left: 10%;
+  transform: rotate(36deg);
+}
+.solid-triangle-outer-3{
+  top: 13%;
+  right: -34.5%;
+  transform: rotate(108deg);
+}
+.solid-triangle-inner{
+  position: absolute;
+  top: 122.5%;
+  right: 0%;
+  width: 200%;
+  height: 100%;
+  background-color: red;
+  transform: rotate(108deg) skewx(54deg);
+}
+</pre>
+</div>
+</body>
+</html>
+ 

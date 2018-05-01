@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>easy-to-adjust css hollow pentagram</title>
+<style>
+body{
+  margin: 0px auto;
+  width: 800px;
+  max-width: 100%;
+}
+.container{
+  max-width: 100%;
+  padding: 10px;
+}
+pre{
+  padding: 10px;
+  background: rgba(128, 128, 128, 0.2);
+  overflow-x: scroll;
+}
+.pentagram-container{
+  /* change size start */
+  width: 200px;
+  height: 200px;
+  /* change size end */
+}
+.pentagram-outer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.pentagram-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.pentagram-01, .pentagram-02, .pentagram-03, .pentagram-04, .pentagram-05{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.pentagram-01{
+  top: -66%;
+  left: 45%;
+  transform: skewx(18deg);
+}
+.pentagram-02{
+  top: -66%;
+  right: 45%;
+  transform: skewx(-18deg);
+}
+.pentagram-03{
+  bottom: -22.5%;
+  right: 75.5%;
+  transform: rotate(18deg) skewy(18deg);
+}
+.pentagram-04{
+  bottom: -22.5%;
+  left: 75.5%;
+  transform: rotate(-18deg) skewy(-18deg);
+}
+.pentagram-05{
+  width: 100%;
+  height: 100%;
+  bottom: -80%;
+  left: 2%;
+  transform: rotate(54deg) skewy(-18deg);
+}
+</style>
+
+</head>
+
+<body translate="no" >
+  <div class="container">
+  <div class="pentagram-container">
+    <div class="pentagram-outer">
+      <div class="pentagram-inner">
+        <div class="pentagram-01"></div>
+        <div class="pentagram-02"></div>
+        <div class="pentagram-03"></div>
+        <div class="pentagram-04"></div>
+        <div class="pentagram-05"></div>
+      </div>
+    </div>
+  </div>
+<p>HTML part</p>
+<code><pre>
+  &lt;div class="pentagram-container"&gt;
+    &lt;div class="pentagram-outer"&gt;
+      &lt;div class="pentagram-inner"&gt;
+        &lt;div class="pentagram-01"&gt;&lt;/div&gt;
+        &lt;div class="pentagram-02"&gt;&lt;/div&gt;
+        &lt;div class="pentagram-03"&gt;&lt;/div&gt;
+        &lt;div class="pentagram-04"&gt;&lt;/div&gt;
+        &lt;div class="pentagram-05"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre></code>
+<p>CSS part</p>
+<pre>
+.pentagram-container{
+  <span style="color: red;">/* change size start */</span>
+  width: 200px;
+  height: 200px;
+  <span style="color: red;">/* change size end */</span>
+}
+.pentagram-outer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.pentagram-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.pentagram-01, .pentagram-02, .pentagram-03, .pentagram-04, .pentagram-05{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.pentagram-01{
+  top: -66%;
+  left: 45%;
+  transform: skewx(18deg);
+}
+.pentagram-02{
+  top: -66%;
+  right: 45%;
+  transform: skewx(-18deg);
+}
+.pentagram-03{
+  bottom: -22.5%;
+  right: 75.5%;
+  transform: rotate(18deg) skewy(18deg);
+}
+.pentagram-04{
+  bottom: -22.5%;
+  left: 75.5%;
+  transform: rotate(-18deg) skewy(-18deg);
+}
+.pentagram-05{
+  width: 100%;
+  height: 100%;
+  bottom: -80%;
+  left: 2%;
+  transform: rotate(54deg) skewy(-18deg);
+}
+</pre>
+</div>
+</body>
+</html>
+ 
