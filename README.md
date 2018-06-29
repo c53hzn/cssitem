@@ -12,10 +12,10 @@ Demo page ->[css gear](https://www.houzhenni.com/cssitem/css-gear.html)
 Demo page ->[css tomato](https://www.houzhenni.com/cssitem/css-tomato.html)
 
 4. A css solid pentagram    
-Demo page ->[css tomato](https://www.houzhenni.com/cssitem/css-solid-pentagram.html)
+Demo page ->[solid pentagram](https://www.houzhenni.com/cssitem/css-solid-pentagram.html)
 
 5. A css hollow pentagram    
-Demo page ->[css tomato](https://www.houzhenni.com/cssitem/css-hollow-pentagram.html)
+Demo page ->[hollow pentagram](https://www.houzhenni.com/cssitem/css-hollow-pentagram.html)
 
 6. A photo album/ photo gallery layout    
-Demo page ->[css tomato](https://www.houzhenni.com/cssitem/photoalbum.html)
+Demo page ->[photo album](https://www.houzhenni.com/cssitem/photoalbum.html)
