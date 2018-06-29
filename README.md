@@ -16,3 +16,6 @@ Demo page ->[css tomato](https://www.houzhenni.com/cssitem/css-solid-pentagram.h
 
 5. A css hollow pentagram    
 Demo page ->[css tomato](https://www.houzhenni.com/cssitem/css-hollow-pentagram.html)
+
+6. A photo album/ photo gallery layout    
+Demo page ->[css tomato](https://www.houzhenni.com/cssitem/photoalbum.html)
