@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Album/ Gallery layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html{
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+.album_outer{
+	margin: 0px auto;
+	/* width is needed */
+	width: 500px;
+	/* width is needed */
+}
+.album_inner{
+	/* padding-top/ translateX is needed */
+	padding-top: 40px;
+	transform: translateX(60px);
+	/* padding-top/ translateX is needed */
+	width: 100%;
+	height: 100%;
+	text-align: left;
+}
+.album_unit{
+	/* margin-left/ width/ height are needed */
+	margin-left: -60px;
+	width: 200px;
+	height: 125px;
+	/* margin-left/ width/ height are needed */
+	display: inline-block;
+	cursor: pointer;
+}
+.album_unit_inner{
+	position: absolute;
+	/* padding/ width/ height are needed */
+	padding: 10px;
+	width: 200px;
+	height: 150px;
+	/* padding/ width/ height are needed */
+	border: 1px solid gray;
+	border-radius: 3% 3% 3% 3%/4% 4% 4% 4%;
+	background: white;
+	display: inline-block;
+	box-sizing: border-box;
+	transform: skewY(-25deg) skewX(20deg);
+	opacity: .85;
+	transition: transform .5s, opacity 0.5s;
+}
+.album_unit img{
+	width: 100%;
+	height: 100%;
+}
+
+/* set hover effect */
+/*
+/* */
+/* .album_unit:hover .album_unit_inner{
+	-webkit-transform: skewX(0deg) skewY(0deg) translate(10px, -3px) scale(1.5);
+	opacity: 1;
+	z-index: 1;
+} */
+/* */
+/*
+/* set hover effect end*/
+
+/* set the effect for mouseenter/ mouseleave/ click event */
+.pop_up{
+	-webkit-transform: skewX(0deg) skewY(0deg) translate(10px, -3px) scale(1.5);
+	opacity: 1;
+}
+/* set the effect end*/
+
+@media all and (max-width: 768px){
+	.album_outer{
+		width: 65%;
+	}
+	.album_inner{
+		transform: translateX(0px);
+		margin-left: 50px;
+	}
+}
+</style>
+</head>
+<body translate="no" >
+<div id="container">
+	<div class="album_outer">
+		<div class="album_inner">
+			<a href="https://img.zcool.cn/community/01d66a579c1d0e0000018c1b7dd7cf.jpg@1280w_1l_2o_100sh.jpg" target="_blank">
+				<div class="album_unit">
+					<div class="album_unit_inner"><img src="https://img.zcool.cn/community/01d66a579c1d0e0000018c1b7dd7cf.jpg@1280w_1l_2o_100sh.jpg"></div>
+				</div>
+			</a>
+			<a href="https://img.zcool.cn/community/0197d9579c1d1b0000018c1b7c1923.jpg@1280w_1l_2o_100sh.jpg" target="_blank">
+				<div class="album_unit">
+					<div class="album_unit_inner"><img src="https://img.zcool.cn/community/0197d9579c1d1b0000018c1b7c1923.jpg@1280w_1l_2o_100sh.jpg"></div>
+				</div>
+			</a>
+			<a href="https://img.zcool.cn/community/01d366579c1d140000018c1b0da9ed.jpg@1280w_1l_2o_100sh.png" target="_blank">
+				<div class="album_unit">
+					<div class="album_unit_inner"><img src="https://img.zcool.cn/community/01d366579c1d140000018c1b0da9ed.jpg@1280w_1l_2o_100sh.png"></div>
+				</div>
+			</a>
+			<a href="https://i3.17173cdn.com/2fhnvk/YWxqaGBf/outcms/QtSTpKbkpliFxxi.jpg" target="_blank">
+				<div class="album_unit">
+					<div class="album_unit_inner"><img src="https://i3.17173cdn.com/2fhnvk/YWxqaGBf/outcms/QtSTpKbkpliFxxi.jpg"></div>
+				</div>
+			</a>
+			<a href="https://img.dwstatic.com/zx/1609/336784652614/336872825662.jpg" target="_blank">
+				<div class="album_unit">
+					<div class="album_unit_inner"><img src="https://img.dwstatic.com/zx/1609/336784652614/336872825662.jpg" /></div>
+				</div>
+			</a>
+			<a href="https://i3.17173cdn.com/2fhnvk/YWxqaGBf/outcms/QtSTpKbkpliFxxi.jpg" target="_blank">
+				<div class="album_unit">
+					<div class="album_unit_inner"><img src="https://i3.17173cdn.com/2fhnvk/YWxqaGBf/outcms/QtSTpKbkpliFxxi.jpg" /></div>
+				</div>
+			</a>
+			<a href="https://img.dwstatic.com/zx/1609/336784652614/336872825662.jpg" target="_blank">
+				<div class="album_unit">
+					<div class="album_unit_inner"><img src="https://img.dwstatic.com/zx/1609/336784652614/336872825662.jpg" /></div>
+				</div>
+			</a>
+			<a href="https://img.zcool.cn/community/0197d9579c1d1b0000018c1b7c1923.jpg@1280w_1l_2o_100sh.jpg" target="_blank">
+				<div class="album_unit">
+					<div class="album_unit_inner"><img src="https://img.zcool.cn/community/0197d9579c1d1b0000018c1b7c1923.jpg@1280w_1l_2o_100sh.jpg" /></div>
+				</div>
+			</a>
+			<a href="https://img.dwstatic.com/zx/1609/336784652614/336872825662.jpg" target="_blank">
+				<div class="album_unit">
+					<div class="album_unit_inner"><img src="https://img.dwstatic.com/zx/1609/336784652614/336872825662.jpg" /></div>
+				</div>
+			</a>
+			<a href="https://img.zcool.cn/community/01d66a579c1d0e0000018c1b7dd7cf.jpg@1280w_1l_2o_100sh.jpg" target="_blank">
+				<div class="album_unit">
+					<div class="album_unit_inner"><img src="https://img.zcool.cn/community/01d66a579c1d0e0000018c1b7dd7cf.jpg@1280w_1l_2o_100sh.jpg" /></div>
+				</div>
+			</a>
+			<a href="https://img.dwstatic.com/zx/1609/336784652614/336872825662.jpg" target="_blank">
+				<div class="album_unit">
+					<div class="album_unit_inner"><img src="https://img.dwstatic.com/zx/1609/336784652614/336872825662.jpg" /></div>
+				</div>
+			</a>
+			<a href="https://img.zcool.cn/community/01d66a579c1d0e0000018c1b7dd7cf.jpg@1280w_1l_2o_100sh.jpg" target="_blank">
+				<div class="album_unit">
+					<div class="album_unit_inner"><img src="https://img.zcool.cn/community/01d66a579c1d0e0000018c1b7dd7cf.jpg@1280w_1l_2o_100sh.jpg" /></div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+<script >
+window.onload = function(){
+	var album_units = document.getElementsByClassName("album_unit");
+	for(let i = 0; i < album_units.length; i++){
+		album_units[i].onmouseenter = function(){
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){
+			}else{
+				var album_unit_inner = this.children[0];
+				album_unit_inner.className = "album_unit_inner pop_up";
+				setTimeout(function(){
+					album_unit_inner.style.zIndex = 1;
+				},250);
+			}
+		};
+		album_units[i].onmouseleave = function(){
+			var album_unit_inner = this.children[0];
+			album_unit_inner.className = "album_unit_inner";
+			setTimeout(function(){
+				album_unit_inner.style.zIndex = 0;
+			},250);
+		};
+		album_units[i].onclick = function(){
+			var album_unit_inner = this.children[0];
+			if(album_unit_inner.className == "album_unit_inner pop_up"){
+				album_unit_inner.className = "album_unit_inner";
+				setTimeout(function(){
+					album_unit_inner.style.zIndex = 0;
+				},500);
+			}else{
+				album_unit_inner.className = "album_unit_inner pop_up";
+				setTimeout(function(){
+					album_unit_inner.style.zIndex = 1;
+				},500);
+			}
+		}
+	}
+	var aTagsInAlbum = document.getElementsByClassName("album_inner")[0].children;
+	for(let k = 0; k < aTagsInAlbum.length; k++){
+		aTagsInAlbum[k].onclick = function(e){
+			var aGrandChild = this.children[0].children[0];
+			if(aGrandChild.className == "album_unit_inner pop_up"){
+				e.preventDefault();
+			}
+		}
+	}
+}
+</script>
+</body>
+</html>
+ 
